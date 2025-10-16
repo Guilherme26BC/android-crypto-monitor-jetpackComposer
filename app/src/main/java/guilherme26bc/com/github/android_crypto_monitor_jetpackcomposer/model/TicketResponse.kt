@@ -1,10 +1,12 @@
 package guilherme26bc.com.github.android_crypto_monitor_jetpackcomposer.model
 
-class TicketResponse(
+// Convertido para data class
+data class TicketResponse(
     val ticker: Ticker
 )
 
-class Ticker(
+// Convertido para data class
+data class Ticker(
     val high: String,
     val low: String,
     val vol: String,
