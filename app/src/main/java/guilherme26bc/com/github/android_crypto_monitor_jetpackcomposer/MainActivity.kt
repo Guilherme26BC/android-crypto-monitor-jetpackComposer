@@ -13,7 +13,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import guilherme26bc.com.github.android_crypto_monitor_jetpackcomposer.screens.BitcoinScreen
+import guilherme26bc.com.github.android_crypto_monitor_jetpackcomposer.screens.LoginScreen
 import guilherme26bc.com.github.android_crypto_monitor_jetpackcomposer.ui.theme.Android_crypto_monitor_jetpackComposerTheme
 
 class MainActivity : ComponentActivity() {
@@ -23,7 +27,19 @@ class MainActivity : ComponentActivity() {
         setContent {
             Android_crypto_monitor_jetpackComposerTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                        BitcoinScreen(modifier = Modifier.padding(innerPadding))
+                    val navController = rememberNavController()
+                    NavHost(
+                        navController = navController,
+                        startDestination = "login",
+                    ) {
+                        composable(route = "login") {
+                            LoginScreen(modifier =  Modifier.padding(innerPadding),navController= navController)
+                        }
+                        composable(route = "menu") {
+                            BitcoinScreen(modifier = Modifier.padding(innerPadding),navController= navController)
+                        }
+                    }
+
 
                 }
             }
