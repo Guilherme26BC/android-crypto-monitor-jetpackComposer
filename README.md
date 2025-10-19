@@ -53,4 +53,4 @@ Este projeto tem como objetivo demonstrar como construir um aplicativo Android d
 
 | Tela Login | Valor criptomoedas | Após "atualizar" | Após "voltar" |
 |--------------|----------------------|-------------------|-------------|
-| <img src="assets/screen1.png" width="200"/> | <img src="assets/screen2.png" width="200"/> | <img src="assets/screen3.png" width="200"/> | <img src="assets/screen4.png" width="200"/> |
+| <img src="assets/screen1.jpeg" width="200"/> | <img src="assets/screen2.jpeg" width="200"/> | <img src="assets/screen3.jpeg" width="200"/> | <img src="assets/screen4.jpeg" width="200"/> |
