@@ -2,6 +2,7 @@
 |----------------------------|--------|
 | Guilherme Bezerra Carvalho | 550282 |
 | Rodolfo Sanches Cima       | 99748  |
+| Felipe Cortez              | 551665 |
 
 # Android Crypto Monitor - Jetpack Compose
 
